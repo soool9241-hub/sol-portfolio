@@ -14,14 +14,14 @@ export default function PhotoStrip() {
 
   return (
     <section className="border-t border-b border-[#1a1a1a]">
-      <div className="flex justify-center gap-4 overflow-x-auto py-8 px-4 sm:px-6 scrollbar-hide">
+      <div className="flex justify-center gap-2 sm:gap-4 overflow-x-auto py-6 sm:py-8 px-4 sm:px-6 scrollbar-hide">
         {GALLERY_IMAGES.map(({ src, caption }, index) => {
           const isActive = index === activeIndex;
           return (
             <div
               key={index}
               onClick={() => setActiveIndex(index)}
-              className={`relative w-[240px] h-[160px] rounded-xl overflow-hidden cursor-pointer flex-shrink-0 transition-all duration-500 ${
+              className={`relative w-[160px] h-[110px] sm:w-[200px] sm:h-[140px] md:w-[240px] md:h-[160px] rounded-xl overflow-hidden cursor-pointer flex-shrink-0 transition-all duration-500 ${
                 isActive
                   ? 'scale-105 brightness-100 border-2 border-[#40916C]'
                   : 'brightness-[0.6] scale-100 border-2 border-transparent'

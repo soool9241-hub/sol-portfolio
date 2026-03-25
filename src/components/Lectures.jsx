@@ -5,7 +5,7 @@ export default function Lectures() {
   const [ref, isInView] = useInView({ threshold: 0.15 })
 
   return (
-    <section id="lectures" ref={ref} className="py-20 px-6 bg-[#080808]">
+    <section id="lectures" ref={ref} className="py-16 sm:py-20 px-4 sm:px-6 bg-[#080808]">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <p
@@ -28,7 +28,7 @@ export default function Lectures() {
           {LECTURES_DATA.map((item, i) => (
             <div
               key={`${item.place}-${item.date}`}
-              className={`bg-[#111111] p-5 rounded-xl border border-[#1a1a1a] hover:border-[#40916C]/30 transition-all mb-3 flex justify-between items-center duration-700 ${
+              className={`bg-[#111111] p-4 sm:p-5 rounded-xl border border-[#1a1a1a] hover:border-[#40916C]/30 transition-all mb-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-0 duration-700 ${
                 isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
               style={{ transitionDelay: isInView ? `${200 + i * 80}ms` : '0ms' }}
@@ -37,7 +37,7 @@ export default function Lectures() {
                 <div className="font-bold text-white">{item.place}</div>
                 <div className="text-[#888] text-sm mt-1">{item.title}</div>
               </div>
-              <div className="font-mono text-[#40916C] text-sm whitespace-nowrap ml-4">
+              <div className="font-mono text-[#40916C] text-sm whitespace-nowrap sm:ml-4">
                 {item.date}
               </div>
             </div>

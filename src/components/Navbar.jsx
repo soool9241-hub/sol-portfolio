@@ -81,7 +81,7 @@ export default function Navbar() {
               <button
                 key={id}
                 onClick={() => scrollToSection(id)}
-                className={`relative text-xs sm:text-sm whitespace-nowrap px-2 py-1 transition-colors duration-200 shrink-0 ${
+                className={`relative text-xs sm:text-sm whitespace-nowrap px-2 py-2 transition-colors duration-200 shrink-0 ${
                   isActive ? 'text-[#40916C]' : 'text-[#888] hover:text-white'
                 }`}
               >

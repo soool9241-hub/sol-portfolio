@@ -6,7 +6,7 @@ export default function Revenue() {
   const [statsRef, statsInView] = useInView({ threshold: 0.2 })
 
   return (
-    <section id="revenue" className="py-24 px-6">
+    <section id="revenue" className="py-16 sm:py-24 px-4 sm:px-6">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="mb-2">
@@ -27,16 +27,16 @@ export default function Revenue() {
             const widthPercent = (item.amount / 82) * 100
 
             return (
-              <div key={item.year} className="flex items-center gap-4">
+              <div key={item.year} className="flex items-center gap-2 sm:gap-4">
                 {/* Year */}
-                <span className="w-[60px] font-mono text-[#40916C] font-bold text-right shrink-0">
+                <span className="w-[40px] sm:w-[60px] font-mono text-[#40916C] font-bold text-right shrink-0 text-xs sm:text-base">
                   {item.year}
                 </span>
 
                 {/* Bar */}
                 <div className="flex-1 relative">
                   <div
-                    className="h-[40px] rounded-r-lg bg-gradient-to-r from-[#1B4332] to-[#40916C]"
+                    className="h-[28px] sm:h-[40px] rounded-r-lg bg-gradient-to-r from-[#1B4332] to-[#40916C]"
                     style={{
                       width: chartInView ? `${widthPercent}%` : '0%',
                       transition: `all 1500ms ease ${i * 200}ms`,
@@ -45,12 +45,12 @@ export default function Revenue() {
                 </div>
 
                 {/* Amount */}
-                <span className="font-mono text-white font-bold w-[60px] shrink-0">
+                <span className="font-mono text-white font-bold w-[45px] sm:w-[60px] shrink-0 text-xs sm:text-base">
                   {item.amount}만
                 </span>
 
                 {/* Growth Badge */}
-                <span className="text-[#40916C] text-sm w-[60px] shrink-0">
+                <span className="text-[#40916C] text-xs sm:text-sm w-[45px] sm:w-[60px] shrink-0">
                   {item.growth || ''}
                 </span>
               </div>

@@ -35,7 +35,7 @@ export default function Journey() {
                   key={index}
                   data-animate
                   data-index={index}
-                  className="flex items-start gap-6 group"
+                  className="flex items-start gap-3 sm:gap-6 group"
                   style={{
                     opacity: isVisible ? 1 : 0,
                     transform: isVisible ? 'translateX(0)' : 'translateX(-30px)',

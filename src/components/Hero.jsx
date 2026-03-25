@@ -18,7 +18,7 @@ export default function Hero() {
             <img
               src="/images/sol-profile-bw.jpg"
               alt="임솔 프로필"
-              className="w-[200px] h-[300px] md:w-[280px] md:h-[420px] object-cover rounded-[20px] shadow-2xl"
+              className="w-[160px] h-[240px] sm:w-[200px] sm:h-[300px] md:w-[280px] md:h-[420px] object-cover rounded-[20px] shadow-2xl"
             />
           </div>
 
@@ -32,7 +32,7 @@ export default function Hero() {
             {/* Name */}
             <h1
               className="font-black text-white leading-none mb-5"
-              style={{ fontSize: 'clamp(48px, 8vw, 80px)' }}
+              style={{ fontSize: 'clamp(36px, 8vw, 80px)' }}
             >
               임 솔
             </h1>

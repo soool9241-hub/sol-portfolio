@@ -5,7 +5,7 @@ export default function TechStack() {
   const [ref, isInView] = useInView({ threshold: 0.15 })
 
   return (
-    <section id="techstack" ref={ref} className="py-20 px-6 bg-[#080808]">
+    <section id="techstack" ref={ref} className="py-16 sm:py-20 px-4 sm:px-6 bg-[#080808]">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <p
@@ -24,11 +24,11 @@ export default function TechStack() {
         </h2>
 
         {/* Tech Cards Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mt-10">
           {TECH_STACK.map((tech, i) => (
             <div
               key={tech.name}
-              className={`bg-[#111111] p-6 rounded-2xl border border-[#1a1a1a] hover:border-[#40916C]/30 transition-all duration-700 ${
+              className={`bg-[#111111] p-4 sm:p-6 rounded-2xl border border-[#1a1a1a] hover:border-[#40916C]/30 transition-all duration-700 ${
                 isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
               style={{ transitionDelay: isInView ? `${200 + i * 100}ms` : '0ms' }}

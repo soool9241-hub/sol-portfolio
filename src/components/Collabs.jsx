@@ -5,7 +5,7 @@ export default function Collabs() {
   const [ref, isInView] = useInView({ threshold: 0.1 })
 
   return (
-    <section id="collabs" className="py-24 px-6">
+    <section id="collabs" className="py-16 sm:py-24 px-4 sm:px-6">
       <div className="max-w-[1100px] mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="mb-12">
@@ -25,7 +25,7 @@ export default function Collabs() {
           {COLLABS.map((item, i) => (
             <div
               key={i}
-              className="bg-[#111111] p-6 rounded-2xl border border-[#1a1a1a] hover:border-[#40916C]/30 transition-all group relative overflow-hidden"
+              className="bg-[#111111] p-4 sm:p-6 rounded-2xl border border-[#1a1a1a] hover:border-[#40916C]/30 transition-all group relative overflow-hidden"
               style={{
                 opacity: isInView ? 1 : 0,
                 transform: isInView ? 'translateY(0)' : 'translateY(24px)',
@@ -35,7 +35,7 @@ export default function Collabs() {
               {/* Top Row */}
               <div className="flex items-start justify-between">
                 <div>
-                  <h3 className="text-[22px] font-bold text-white">
+                  <h3 className="text-base sm:text-[22px] font-bold text-white break-keep">
                     {item.brand}
                   </h3>
                   <p className="text-[12px] text-[#888] mt-1">{item.sub}</p>

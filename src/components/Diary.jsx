@@ -189,7 +189,7 @@ export default function Diary() {
             transform: headerInView ? 'translateY(0)' : 'translateY(40px)',
             transition: 'opacity 0.6s ease, transform 0.6s ease',
           }}
-          className="mb-8 flex items-end justify-between"
+          className="mb-8 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-3 sm:gap-0"
         >
           <div>
             <p className="font-mono text-[#40916C] tracking-widest text-sm">GROWTH DIARY</p>
