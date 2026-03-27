@@ -16,7 +16,7 @@ export const HERO_STATS = [
   { value: '1,000+', label: '제작' },
   { value: '350+', label: '펜션 예약 팀' },
   { value: '2억+', label: '연평균 매출' },
-  { value: '40명', label: 'AI 에이전트' },
+  { value: '84명', label: 'AI 에이전트' },
 ]
 
 export const GALLERY_IMAGES = [
@@ -36,7 +36,7 @@ export const JOURNEY_DATA = [
   { year: '2021', title: '콜라보 폭발', desc: '아디다스&스토리팜 · 콘크리트스튜디오&스토리팜 · 리슬&스토리팜 · 더보이즈 뮤비 소품 제작' },
   { year: '2022', title: '브랜드 기획', desc: 'sneff 캠핑 13종' },
   { year: '2025', title: '펜션 운영 5년차', desc: '매년 20%+ 성장 · 26년 연매출 1억 초과 예정' },
-  { year: '2026', title: 'AI 자동화 시스템', desc: '40건+ 개발 · AI 에이전트 40명 구축 · AI 스터디 모임 예정' },
+  { year: '2026', title: 'AI 자동화 시스템', desc: '40건+ 개발 · AI 에이전트 84명 구축 · AI 스터디 모임 예정' },
 ]
 
 export const METRICS_DATA = [
@@ -68,28 +68,40 @@ export const PENSION_STATS = [
 
 export const AGENT_TEAMS = [
   {
-    name: 'A팀: 달팽이아지트 펜션 사업부',
-    count: 10,
+    name: 'A팀: 달팽이아지트 펜션',
+    count: 19,
     color: '#1B4332',
-    agents: ['예약이', '안내양', '후기짱', '단체팀장', '가격이', '청소대장', '사진작가', '블로거', '경쟁자', '패키저'],
+    agents: ['리서치PM', '시장리서처', '가망고객헌터', '견적산출봇', '수익분석가', '운영PM', '예약관리', '고객안내', '후기관리', '상품PM', '패키지기획', '시즌기획', '체험설계', '콘텐츠PM', '사진작가', '카피라이터', '마케팅PM', '블로거', '광고운영'],
   },
   {
-    name: 'B팀: 스토리팜 CNC 공방 사업부',
-    count: 10,
+    name: 'B팀: 스토리팜 CNC 공방',
+    count: 21,
     color: '#2D6A4F',
-    agents: ['파일러', '주문이', '디자이너', '수강생', '강사님', '재고왕', '견적이', '포트폴', '트렌드', '협업이'],
+    agents: ['리서치PM', '트렌드분석', '경쟁자분석', '기술리서처', '수요분석', '제조PM', '주문관리', '견적산출', '품질관리', '재고관리', '배송관리', '상품PM', '디자이너', '파일러', '신제품기획', '교육PM', '수강생관리', '강사님', '영업PM', '협업이', 'B2B영업'],
   },
   {
-    name: 'C팀: 마케팅/자동화 사업부',
-    count: 10,
+    name: 'C팀: 마케팅·자동화',
+    count: 16,
     color: '#40916C',
-    agents: ['인스타', '유튜버', '카카오', '네이버', '광고주', '뉴스레터', '분석가', '제휴왕', '자동화', '보고왕'],
+    agents: ['인스타', '유튜버', '카카오', '네이버', '광고주', '뉴스레터', '분석가', '제휴왕', '자동화', '보고왕', 'SNS매니저', '리타게팅', 'CRM봇', '이벤트기획', '리뷰수집', '데이터봇'],
   },
   {
     name: 'D팀: 웹개발 에이전시',
-    count: 10,
+    count: 15,
     color: '#52B788',
-    agents: ['기획자', '디자이너', '프론트', '백엔드', '풀스택', 'SEO봇', '견적왕', '유지보수', '영업이', 'PM'],
+    agents: ['기획자', 'UI디자이너', '프론트', '백엔드', '풀스택', 'SEO봇', 'QA테스터', '견적왕', '영업이', 'PM', 'DB설계', '보안리뷰', '기술문서', '리서치PM', '경쟁분석'],
+  },
+  {
+    name: 'E팀: 사업기획',
+    count: 10,
+    color: '#74C69D',
+    agents: ['기획PM', '시장리서처', '전략가', '재무분석', '마케팅전략', '문서편집', '발표자료', '지원사업', '트렌드봇', '벤치마킹'],
+  },
+  {
+    name: 'F팀: 사업계획 에이전시',
+    count: 10,
+    color: '#95D5B2',
+    agents: ['디렉터', '시장분석', 'BM설계', '재무설계', '마케팅기획', '전략컨설턴트', '에디터', 'IR전문가', '피칭코치', 'QA리뷰'],
   },
 ]
 
@@ -113,7 +125,7 @@ export const TECH_STACK = [
   { icon: '🖥️', name: '프론트엔드', items: ['React+Vite', 'Tailwind CSS', 'Vercel'] },
   { icon: '⚙️', name: '백엔드', items: ['Supabase', 'PostgreSQL+RLS', 'REST API'] },
   { icon: '🔄', name: '자동화', items: ['n8n', 'Solapi SMS/LMS', 'KakaoTalk API'] },
-  { icon: '🤖', name: 'AI/LLM', items: ['Claude API', 'Claude Projects', '멀티에이전트 40명'] },
+  { icon: '🤖', name: 'AI/LLM', items: ['Claude API', 'Claude Projects', '멀티에이전트 84명'] },
   { icon: '📊', name: '데이터', items: ['Google Sheets', 'Supabase DB', '304건 분석'] },
 ]
 

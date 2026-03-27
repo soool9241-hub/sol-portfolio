@@ -2,7 +2,7 @@ export const PROJECTS = [
   {
     year: '2026',
     items: [
-      { title: 'AI 에이전트 40명 설계', highlight: true, desc: '펜션·경쟁정보·CNC 3개 팀 멀티에이전트 시스템 설계', scope: '기획 · 설계', tag: 'AI', steps: { plan: true, dev: true, publish: false } },
+      { title: 'AI 에이전트 84명 설계', highlight: true, desc: '펜션(19명)·공방(21명)·마케팅(16명)·웹개발(15명)·사업기획(10명)·사업계획(10명) 6개 사업부', scope: '기획 · 설계', tag: 'AI', steps: { plan: true, dev: true, publish: false } },
       { title: 'n8n+Solapi 마케팅 자동화', desc: '예약 확인·리뷰 요청·프로모션 SMS/LMS 자동 발송', scope: '기획 · 개발', tag: '자동화', steps: { plan: true, dev: true, publish: true } },
       { title: '임솔 포트폴리오 사이트', desc: '청년장인 이력·경력·성과를 담은 원페이지 포트폴리오', scope: '기획 · 개발', tag: '웹', url: 'https://sol-portfolio-neon.vercel.app', steps: { plan: true, dev: true, publish: true } },
       { title: '달팽이 멤버십 앱', desc: '펜션 재방문 고객 전용 멤버십·포인트·쿠폰 시스템', scope: '기획 · 개발', tag: '웹', url: 'https://web-snail1.vercel.app', steps: { plan: true, dev: true, publish: true } },

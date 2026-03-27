@@ -39,7 +39,7 @@ export default function Hero() {
 
             {/* Description */}
             <p className="text-[#ccc] text-sm sm:text-base leading-relaxed mb-1">
-              120평 CNC 공방 &middot; 60평 독채 펜션 &middot; AI 에이전트 40명
+              120평 CNC 공방 &middot; 60평 독채 펜션 &middot; AI 에이전트 84명
             </p>
             <p className="text-[#40916C] text-sm sm:text-base leading-relaxed mb-6">
               스토리팜 대표 &middot; 청년장인 &middot; 10년차 메이커
